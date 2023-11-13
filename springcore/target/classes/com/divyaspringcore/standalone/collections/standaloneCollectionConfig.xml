@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    ">
+
+	<!-- this is our beans -->
+	
+	<!-- standalone list -->
+	<util:list list-class="java.util.LinkedList" id="myBestFriends" >
+		<value>Sipu</value>
+		<value>Ritesh</value>
+		<value>Mithilesh</value>
+	</util:list>
+	
+	<!-- standalone Map -->
+	<util:map map-class="java.util.TreeMap" id="foodItems">
+		<entry key="full-meal"  value="50" />
+		<entry key="roti-sabji(4 roti)"  value="40" />
+		<entry key="half-paneer-tika(8 piece)"  value="150" />
+		<entry key="chicken-curry-full(8 piece)"  value="250" />
+		<entry key="fish-milando(4 piece)"  value="150" />
+	</util:map>
+	
+	<!-- standalone Properties -->
+	<util:properties id="propertiesId">
+		<prop key="url">jdbc</prop>
+		<prop key="user">root</prop>
+		<prop key="password">root123</prop>
+	</util:properties>
+	
+	
+
+	<bean class="com.divyaspringcore.standalone.collections.Person" name="person1">
+				<!-- <property name="friends" >
+					<ref bean="myBestFriends" />
+				</property> -->
+				<property name="friends" ref="myBestFriends" />
+				<property name="foodItems" ref="foodItems" />
+	</bean>
+	
+	<bean class="com.divyaspringcore.standalone.collections.Person" name="person2">
+				<!-- <property name="friends" >
+					<ref bean="myBestFriends" />
+				</property> -->
+				<property name="friends" ref="myBestFriends" />
+				<property name="foodItems" ref="foodItems" />
+	</bean>
+
+<bean class="com.divyaspringcore.standalone.collections.Person" name="person3">
+				<!-- <property name="friends" >
+					<ref bean="myBestFriends" />
+				</property> -->
+				<property name="friends" ref="myBestFriends" />
+				<property name="foodItems" ref="foodItems" />
+				<property name="properties" ref="propertiesId" />
+	</bean>
+
+
+
+</beans>

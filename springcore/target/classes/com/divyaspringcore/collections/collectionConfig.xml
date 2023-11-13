@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- this is our beans -->
+	<!-- ways to give values to bean -->
+
+	<bean class="com.divyaspringcore.collections.Emp" name="emp1">
+		<property name="name" value="Radhe" />
+
+		<property name="phones">
+			<list>
+				<value>74619191192</value>
+				<value>23221919119</value>
+				<value>74121191192</value>
+				<value>74612319119</value>
+				<null />
+			</list>
+		</property>
+
+		<property name="addresses">
+			<set>
+				<value>Arrah</value>
+				<value>Kanpur</value>
+				<value>Delhi</value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+
+		<property name="course">
+			<map>
+				<entry key="java" value="2 months" />
+				<entry key="jee" value="1 months" />
+				<entry key="orm" value="1 months" />
+				<entry key="spring" value="2 months" />
+			</map>
+		</property>
+
+		<property name="props">
+			<props>
+				<prop key="url">jdbc:mysql:///ineuron</prop>
+				<prop key="username">root</prop>
+				<prop key="password">data123</prop>
+			</props>
+		</property>
+
+	</bean>
+
+
+
+
+</beans>

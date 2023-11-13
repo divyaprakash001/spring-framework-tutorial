@@ -1,0 +1,13 @@
+127.0.0.1 - - [30/Oct/2023:11:40:56 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:40:59 +0530] "GET /springmvcSearch/ HTTP/1.1" 200 765
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:40:59 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:43:57 +0530] "GET /springmvcSearch/home HTTP/1.1" 500 3928
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:07 +0530] "GET /springmvcSearch/search HTTP/1.1" 404 770
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:12 +0530] "GET /springmvcSearch/form HTTP/1.1" 200 3116
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:21 +0530] "POST /springmvcSearch/handleform HTTP/1.1" 200 1462
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:26 +0530] "GET /springmvcSearch/form HTTP/1.1" 200 3116
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:28 +0530] "GET /springmvcSearch/home HTTP/1.1" 500 3928
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:33 +0530] "GET /springmvcSearch/fileform HTTP/1.1" 500 3928
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:36 +0530] "GET /springmvcSearch/homme HTTP/1.1" 200 352
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:39 +0530] "GET /springmvcSearch/welcome?user=durgesh HTTP/1.1" 200 58
+0:0:0:0:0:0:0:1 - - [30/Oct/2023:11:44:46 +0530] "GET /springmvcSearch/welcome?user=rah HTTP/1.1" 200 163

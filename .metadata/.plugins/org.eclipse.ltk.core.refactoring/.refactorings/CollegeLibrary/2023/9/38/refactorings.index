@@ -1,0 +1,6 @@
+1695294650749	Rename package 'productcrudapp.controller'
+1695294665633	Rename package 'productcrudapp.dao'
+1695294676082	Rename package 'productcrudapp.model'
+1695294831841	Rename type 'Product'
+1695294889000	Rename type 'Library'
+1695294908895	Rename type 'ProductDao'

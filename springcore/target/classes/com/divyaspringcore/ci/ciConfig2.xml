@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- this is our beans -->
+	<!-- ways to give values to bean using constructor injection -->
+
+	<!-- value as attribute -->
+	<bean class="com.divyaspringcore.ci.Person" name="person1">
+		<constructor-arg value="radhe" type="String" />
+		<constructor-arg value="10" type="int" />
+	
+	</bean>
+
+	<!-- using c schema for constructor we use c:namespace -->
+	<bean class="com.divyaspringcore.ci.Person" name="person2"
+		c:name="kohli" c:personId="7" />
+
+	<!-- value -->
+	<bean class="com.divyaspringcore.ci.Person" name="person3">
+
+<!--  here using type to resolve ambiguity problem -->
+		<constructor-arg type="String">
+			<value >raina</value>
+		</constructor-arg>
+
+		<constructor-arg type="int">
+			<value>76</value>
+		</constructor-arg>
+
+	</bean>
+
+
+
+
+
+</beans>

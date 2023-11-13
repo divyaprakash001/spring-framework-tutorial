@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- this is our beans -->
+	<!-- giving values to bean using constructor injection -->
+
+	<!-- <bean class="com.divyaspringcore.ci.Certi" name="cer"> <constructor-arg 
+		value="java certificate" type="String" /> </bean> <bean class="com.divyaspringcore.ci.Person" 
+		name="person1"> <constructor-arg value="radhe" type="String" /> <constructor-arg 
+		value="10" type="int" /> <constructor-arg ref="cer" /> </bean> -->
+
+	<bean class="com.divyaspringcore.ci.Certi" name="cer"
+		c:name="Enterprize Java Application" />
+
+	<bean class="com.divyaspringcore.ci.Person" name="person1">
+		<constructor-arg name="name" value="shyam"
+			type="String" />
+		<constructor-arg name="personId" value="11" type="int" />
+		<constructor-arg ref="cer" />
+		<constructor-arg>
+			<list>
+				<value>java</value>
+				<value>jee</value>
+				<value>orm</value>
+				<value>spring</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<!-- additon -->
+	<bean class="com.divyaspringcore.ci.Addition" name="add">
+		<constructor-arg value="12" type="int" index="1"/>
+		<constructor-arg value="34" type="int" index="0"/>
+	</bean>
+
+
+
+
+
+</beans>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\DIVYAPRAKASH\eclipse-spring-framework-durgesh-31aug\springMVC"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.aop"/>
+			<item value="com.operation.firstwebsite"/>
+			<item value="com.operation.bookstore"/>
+			<item value="com.operation.libraryapp"/>
+			<item value="com.operation.productcrudapp"/>
+			<item value="com.divyaspring.search"/>
+			<item value="com.divyaspring.mvc"/>
+			<item value="com.divyaspring.orm"/>
+			<item value="com.divyaspring"/>
+			<item value="com.divyaspring.jdbc"/>
+			<item value="com.divyaspringcore"/>
+		</list>
+		<list key="groupId">
+			<item value="com.aop"/>
+			<item value="com.operation"/>
+			<item value="com.divyaspring.search"/>
+			<item value="com.divyaspring.mvc"/>
+			<item value="com.divyaspring.orm"/>
+			<item value="com.divyaspring"/>
+			<item value="com.divyaspring.jdbc"/>
+			<item value="com.divyaspringcore"/>
+		</list>
+		<list key="artifactId">
+			<item value="aopconcept"/>
+			<item value="firstwebsite"/>
+			<item value="bookstore"/>
+			<item value="libraryapp"/>
+			<item value="productcrudapp"/>
+			<item value="springmvcSearch"/>
+			<item value="springMVC"/>
+			<item value="SpringORM"/>
+			<item value="SpringRevision"/>
+			<item value="springJdbc"/>
+			<item value="springcoreRevise"/>
+			<item value="springCoreRevision"/>
+			<item value="springcore"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

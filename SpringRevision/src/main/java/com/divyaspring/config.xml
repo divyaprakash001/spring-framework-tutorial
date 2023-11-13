@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.divyaspring.Student" name="student1">
+		<property name="stdId" value="10" />
+		<property name="stdName" value="Sachin" />
+	</bean>
+
+	<bean class="com.divyaspring.Student" name="student2" p:stdId="11"
+		p:stdName="Rohit"  />
+
+	<bean class="com.divyaspring.Student" name="student3">
+		<property name="stdName" value="Dhoni"  />
+		<property name="stdId" value="7" />
+		<property name="phones">
+			<list>
+				<value>7622632728</value>
+				<value>8623432728</value>
+				<value>9224532728</value>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>CSK</value>
+				<value>Ranchi</value>
+				<value>Chennai</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="java" value="2 month" />
+				<entry key="jee" value="1 month" />
+				<entry key="orm" value="1 month" />
+				<entry key="spring" value="2 month" />
+			</map>
+		</property>
+		<property name="props">
+			<props>
+				<prop key="url">jdbc</prop>
+				<prop key="user">root</prop>
+				<prop key="password">root123</prop>
+			</props>
+		</property>
+	</bean>
+
+
+</beans>
